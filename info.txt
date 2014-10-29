@@ -1,0 +1,13 @@
+Verizon iPhone Personal Hotspot Enabler
+  Works for iOS 7.x
+  To be tested with iOS 8.x
+
+"The world's only 100% free tethering option for Verizon
+iPhone owners holding onto their Unlimited Data plans"
+
+This is a modified carrier bundle for Verizon LTE-enabled iPhones
+(5, 5s, 6, 6+) to allow for Personal Hotspot without paying double
+for your data plan ($29.99 for Unlimited Data + $30 for 4G Mobile
+Hotspot).
+
+More instructions to follow November 2014!
