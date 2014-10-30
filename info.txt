@@ -10,4 +10,27 @@ This is a modified carrier bundle for Verizon LTE-enabled iPhones
 for your data plan ($29.99 for Unlimited Data + $30 for 4G Mobile
 Hotspot).
 
-More instructions to follow November 2014!
+
+Preflight Checklist
+————————————————————
+- Your iPhone must be LTE-capable (5, 5s, 6, 6+)
+- Your iPhone must be Jailbroken with Cydia installed
+— Your iPhone must also have OpenSSH installed if you want to use SSH/FTP to transfer the modified carrier bundle from your computer to your iPhone.
+
+Okay!
+————
+1. In Cydia, under Sources, add http://apt.chinasnow.net/
+2. Search for and install “CommCenter Patch for iOS 8” (Not iOS 7)
+3. Log into your My Verizon account and add “4G Mobile Hotspot” to your features. Make sure you select the correct device to add this feature to!
+4. Use iFile, SSH or the FTP Server to backup your phone’s Verizon carrier bundle, located in System/Library/Carrier Bundles/Verizon… (the only Verizon one.)
+5. … And replace it with the modified carrier bundle.
+6. Reboot your phone and verify that it still connects to Verizon (usually just seeing “Verizon” in the top bar is verification enough).
+7. In My Verizon, remove 4G Mobile Hotspot.
+8. Reboot your phone once more to verify that you still have Portable Hotspot sans the 4G Mobile Hotspot feature.
+9. Enjoy not paying twice for your data!
+
+
+Warnings!
+——————————
+- If you forget to remove 4G Mobile Hotspot from your plan, I am not responsible for any charges you may incur, and you *will* incur them (about $1/day prorated). So if you realize after a week that you never removed the feature, you’ll likely only be charged ~$7.
+
