@@ -1,36 +1,48 @@
 Verizon iPhone Personal Hotspot Enabler
-  Works for iOS 7.x
-  To be tested with iOS 8.x
-
-"The world's only 100% free tethering option for Verizon
-iPhone owners holding onto their Unlimited Data plans"
+  Works for iOS 7.x and 8.x
 
 This is a modified carrier bundle for Verizon LTE-enabled iPhones
 (5, 5s, 6, 6+) to allow for Personal Hotspot without paying double
 for your data plan ($29.99 for Unlimited Data + $30 for 4G Mobile
-Hotspot).
+Hotspot). Most people these days have tethering as part of their carrier’s plan,
+but many of us are still holding onto Unlimited Data, and who wants to pay twice
+for the same data?
 
 
 Preflight Checklist
 ————————————————————
 - Your iPhone must be LTE-capable (5, 5s, 6, 6+)
 - Your iPhone must be Jailbroken with Cydia installed
-— Your iPhone must also have OpenSSH installed if you want to use SSH/FTP to transfer the modified carrier bundle from your computer to your iPhone.
+— Your iPhone must also have OpenSSH+OpenSSL installed if you want to use SSH/SFTP to transfer the modified carrier bundle from your computer to your iPhone.
+
+Notes
+—————
+- FTP will not work, it must be SFTP!
+	- Username is “root”, password is “root”
+	- For SSH, password is “alpine”
+- Folders may be hidden… you can go to them directly, however.
+	- The Verizon Carrier Bundle is located at /System/Library/Carrier Bundles/iPhone/Verizon_LTE_US.bundle 
+
 
 Okay!
 ————
-1. In Cydia, under Sources, add http://apt.chinasnow.net/
-2. Search for and install “CommCenter Patch for iOS 8” (Not iOS 7)
-3. Log into your My Verizon account and add “4G Mobile Hotspot” to your features. Make sure you select the correct device to add this feature to!
-4. Use iFile, SSH or the FTP Server to backup your phone’s Verizon carrier bundle, located in System/Library/Carrier Bundles/Verizon… (the only Verizon one.)
-5. … And replace it with the modified carrier bundle.
-6. Reboot your phone and verify that it still connects to Verizon (usually just seeing “Verizon” in the top bar is verification enough).
-7. In My Verizon, remove 4G Mobile Hotspot.
-8. Reboot your phone once more to verify that you still have Portable Hotspot sans the 4G Mobile Hotspot feature.
-9. Enjoy not paying twice for your data!
+1. In Cydia, under Sources, add http://cydia.myrepospace.com/applelab/
+2. Find and install “CommCenter Patch iOS8”
+3. Respring.
+4. Log into your My Verizon account and add “4G Mobile Hotspot” to your features. Make sure you select the correct device/line to add this feature to!
+5. Reboot.
+6. Use iFile, SSH or the SFTP client to backup your phone’s Verizon carrier bundle, located in System/Library/Carrier Bundles/Verizon_LTE_US.bundle
+7. And replace it with the modified carrier bundle.
+8. Reboot your phone and verify that it still connects to Verizon (usually just seeing “Verizon” in the top bar is verification enough).
+9. Verify that you still have Personal Hotspot in Settings.
+10. Reboot.
+11. In My Verizon, remove 4G Mobile Hotspot.
+12. Reboot for the last time and verify that you still have Personal Hotspot.
+13. Enjoy not paying twice for your data!
 
 
 Warnings!
 ——————————
 - If you forget to remove 4G Mobile Hotspot from your plan, I am not responsible for any charges you may incur, and you *will* incur them (about $1/day prorated). So if you realize after a week that you never removed the feature, you’ll likely only be charged ~$7.
+- If you “Reset Network Settings”, it will likely remove Personal Hotspot, and you’ll have to do this all again.
 
