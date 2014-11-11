@@ -5,8 +5,7 @@ This is a modified carrier bundle for Verizon LTE-enabled iPhones
 (5, 5s, 6, 6+) to allow for Personal Hotspot without paying double
 for your data plan ($29.99 for Unlimited Data + $30 for 4G Mobile
 Hotspot). Most people these days have tethering as part of their carrier’s plan,
-but many of us are still holding onto Unlimited Data, and who wants to pay twice
-for the same data?
+but many of us are still holding onto Unlimited Data (or even the $30/month 2GB plan), and who wants to pay twice for the same data?
 
 
 Preflight Checklist
